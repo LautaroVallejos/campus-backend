@@ -1,15 +1,24 @@
-FROM strapi/base:alpine
+FROM node:16
 
-WORKDIR /usr/src/app/backend
+RUN apt-get update && apt-get install libvips-dev -y
 
-COPY ./package.json /usr/src/app/backend/
-COPY ./.env /usr/src/app/backend
+ARG NODE_ENV=development
+
+ENV NODE_ENV=${NODE_ENV}
+
+WORKDIR /usr/src/app/
+
+COPY ./package.json /usr/src/app/
+
+COPY ./.env /usr/src/app/
+
+COPY ./ .
+
+ENV NODE_ENV .env
 
 RUN npm install
 
-COPY . .
-
-ENV NODE_ENV .env
+RUN npm run build
 
 EXPOSE 1337
 
