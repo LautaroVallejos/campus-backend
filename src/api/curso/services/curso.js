@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * curso service.
+ * curso service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;

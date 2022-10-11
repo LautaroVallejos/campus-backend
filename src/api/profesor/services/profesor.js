@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * profesor service.
+ * profesor service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;

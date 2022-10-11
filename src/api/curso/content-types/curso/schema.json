@@ -4,7 +4,7 @@
   "info": {
     "singularName": "curso",
     "pluralName": "cursos",
-    "displayName": "Curso",
+    "displayName": "Cursos",
     "description": ""
   },
   "options": {
@@ -12,30 +12,33 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nombre": {
-      "type": "string"
-    },
     "especialidad": {
       "type": "enumeration",
       "enum": [
         "prog",
+        "ipp",
         "ado",
-        "ipp"
+        "año"
       ]
     },
-    "ano": {
-      "type": "integer"
-    },
-    "estudiantes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::estudiante.estudiante",
-      "mappedBy": "curso"
+    "Ano": {
+      "type": "biginteger"
     },
     "preceptor": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::preceptor.preceptor"
+    },
+    "estudiantes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::estudiante.estudiante"
+    },
+    "cicloBasico": {
+      "type": "boolean"
+    },
+    "nombreCurso": {
+      "type": "string"
     }
   }
 }

@@ -5,7 +5,7 @@ const config = {
     // 'cs',
     // 'de',
     // 'dk',
-    'es',
+    // 'es',
     // 'he',
     // 'id',
     // 'it',
@@ -29,7 +29,7 @@ const config = {
   ],
 };
 
-const bootstrap = app => {
+const bootstrap = (app) => {
   console.log(app);
 };
 

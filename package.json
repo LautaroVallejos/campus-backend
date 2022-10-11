@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "campus-mvp",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -9,22 +9,21 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.3.2",
-    "@strapi/plugin-users-permissions": "4.3.2",
-    "@strapi/strapi": "4.3.2",
-    "dotenv": "^16.0.1",
-    "mysql": "^2.18.1",
-    "strapi-google-auth": "^0.1.2"
+    "@strapi/strapi": "4.4.3",
+    "@strapi/plugin-users-permissions": "4.4.3",
+    "@strapi/plugin-i18n": "4.4.3",
+    "better-sqlite3": "7.4.6"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "f6a9383b-90be-4f23-997b-d7f7bd3d3be3"
+    "uuid": "74441b2c-3aba-4091-b55d-f096b5991b29"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"

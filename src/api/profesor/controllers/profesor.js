@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- *  profesor controller
+ * profesor controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;

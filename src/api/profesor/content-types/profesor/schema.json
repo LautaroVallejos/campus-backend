@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "profesors",
+  "collectionName": "profesores",
   "info": {
     "singularName": "profesor",
-    "pluralName": "profesors",
-    "displayName": "Profesor"
+    "pluralName": "profesores",
+    "displayName": "Profesores"
   },
   "options": {
     "draftAndPublish": true
@@ -17,11 +17,11 @@
     "apellido": {
       "type": "string"
     },
-    "materia": {
-      "type": "string"
-    },
     "email": {
       "type": "email"
+    },
+    "materia": {
+      "type": "string"
     }
   }
 }

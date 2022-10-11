@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * preceptor router.
+ * preceptor router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;

@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- *  preceptor controller
+ * preceptor controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;

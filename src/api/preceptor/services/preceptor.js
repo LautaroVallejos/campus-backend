@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * preceptor service.
+ * preceptor service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;

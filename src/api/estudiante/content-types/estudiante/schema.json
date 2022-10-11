@@ -4,7 +4,8 @@
   "info": {
     "singularName": "estudiante",
     "pluralName": "estudiantes",
-    "displayName": "Estudiante"
+    "displayName": "Estudiantes",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,17 +27,24 @@
     "contactoTutor": {
       "type": "biginteger"
     },
-    "nroObraSocial": {
+    "numObraSocial": {
       "type": "biginteger"
     },
-    "dni": {
+    "DNI": {
       "type": "biginteger"
+    },
+    "obraSocial": {
+      "type": "string"
     },
     "curso": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::curso.curso",
-      "inversedBy": "estudiantes"
+      "relation": "oneToOne",
+      "target": "api::curso.curso"
+    },
+    "preceptores": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::preceptor.preceptor"
     }
   }
 }
