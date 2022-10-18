@@ -15,30 +15,26 @@
     "especialidad": {
       "type": "enumeration",
       "enum": [
-        "prog",
-        "ipp",
-        "ado",
-        "año"
+        "Programación",
+        "Informática Personal y Profesional",
+        "Administración de Organizaciones",
+        "Ciclo Básico"
       ]
     },
     "Ano": {
       "type": "biginteger"
-    },
-    "preceptor": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::preceptor.preceptor"
-    },
-    "estudiantes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::estudiante.estudiante"
     },
     "cicloBasico": {
       "type": "boolean"
     },
     "nombreCurso": {
       "type": "string"
+    },
+    "preceptore": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::preceptor.preceptor",
+      "inversedBy": "cursos"
     }
   }
 }

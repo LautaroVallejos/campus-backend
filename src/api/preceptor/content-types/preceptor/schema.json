@@ -24,7 +24,8 @@
     "cursos": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::curso.curso"
+      "target": "api::curso.curso",
+      "mappedBy": "preceptore"
     }
   }
 }

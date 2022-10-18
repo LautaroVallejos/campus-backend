@@ -36,15 +36,18 @@
     "obraSocial": {
       "type": "string"
     },
+    "grupoTaller": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
     "curso": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::curso.curso"
-    },
-    "preceptores": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::preceptor.preceptor"
     }
   }
 }
